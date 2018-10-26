@@ -7,12 +7,14 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres 
-  password: 190813
+  username: bllzaboqwxcxrz 
+  host: ec2-54-225-115-234.compute-1.amazonaws.com
+  port: 5432
+  password: 19f7f0d8ae99d6ece294f9bcc72a7fc0c8cdb7f2a654397cc21d0d793e9bbd21
 
 development:
   <<: *default
-  database: betterride-api_development
+  database: d4dcrp0h504tv6
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
